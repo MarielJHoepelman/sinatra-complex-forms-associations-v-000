@@ -27,7 +27,7 @@ class PetsController < ApplicationController
   end
 
   patch '/pets/:id' do
-    if !params[:owner].keys.include?("pet_ids")
+    if !params[:pets].keys.include?("owner_id")
     params[:owner]["pet_ids"] = []
     end
 
