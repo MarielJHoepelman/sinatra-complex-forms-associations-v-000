@@ -2,7 +2,7 @@
 
 <h2>Edits for <%= @pet.name %></h2>
 
-  <form action="/owners/<%= @owner.id %>" method="POST">
+  <form action="/pets/<%= @owner.id %>" method="POST">
     <input id="hidden" type="hidden" name="_method" value="patch">
     <label>Edit the Owner's Name:</label>
     <br>
